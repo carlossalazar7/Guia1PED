@@ -2,6 +2,7 @@ namespace Guia1PED
 {
     public partial class Ejemplo1 : Form
     {
+        //declaración de variables a utilizar
         public  double Num1, Num2, Resultado;
         public bool Is1, Is2, Es_op;
         int Operacion;
@@ -134,11 +135,12 @@ namespace Guia1PED
                     Resultado = Math.Pow(op1,op2);
                     break;
                 default:
-                    MessageBox.Show("operación no encontrada");
+                    MessageBox.Show("operación no encontrada!");
                     break;
             }
             return Resultado;
         }
+        //método para evaluar  operaciones avanzadas
         public double operar_avanzado(double op1, String signo)
         {
             {
@@ -161,7 +163,7 @@ namespace Guia1PED
                         Resultado = Math.Log(op1);
                         break;
                     default:
-                        MessageBox.Show("operación no encontrada");
+                        MessageBox.Show("Operación no encontrada");
                         break;
                 }
 
